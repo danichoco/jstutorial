@@ -1,35 +1,25 @@
-function sumar (a , b){
-    return a+b;
-}
 
-function restar (a , b){
-    return a-b;
-}
+ const math = require('./math');
 
-function multiplicar (a , b){
-    return a*b;
+function contar(maxcount){
+   
+    for ( number = 1; number<=maxcount; number=number+1){
+    console.log(number);
 }
-
-function dividir (a , b){
-    return a/b;
 }
+contar(1000);
+console.log('........');
+contar(10);
+console.log('.........');
+contar(80);
+/*
+ console.log(math.sumar(2,3 ));
+console.log(math.restar(30,3 ));
+console.log(math.multiplicar(20, 40 ));
+console.log(math.dividir(100,10 ));
 
-function abs(number){
-    result = 0;
-    if(number < 0){
-     result = number * -1;
- }
- else{            
-     result = number;
- }
-    return result;
-}
-console.log(sumar(2,4))
-console.log(restar(8,3))
-console.log(multiplicar(50, 20))
-console.log(dividir(3,6))
-
-console.log(abs(-100)) //debe devolver 100
-console.log(abs(60)) //debe devolver 60
-console.log(abs(-20)) //debe devolver -20
-console.log(dividir(20)) //debe devolver 20
+console.log(math.abs(-100)); //debe devolver 100
+console.log(math.abs( 400)); //debe devolver 400
+console.log(math.abs(20)); //debe devolver 20
+console.log(math.abs(-10)); //debe devolver 10
+*/
