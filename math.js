@@ -1,29 +1,27 @@
 function sumar( a,b ){
-    return a+b;
-}
-function restar( a,b ){
-    return a-b;
-}
-
-function multiplicar( a,b ){
-    return a*b;
-}
+    return  a+b;
+ }
  
-function dividir( a,b ){
-    return a/b;
-}
+ function restar( a,b ){
+   return  a-b;
+ }
+ 
+ function multiplicar( a,b ){
+   return  a*b;
+ }
+ 
+ function dividir( a,b ){
+   return  a/b;
+ }
+ 
+ function abs(number){
+    
+   if( number <= 100){
+     result= number * -1;
+   }
+   return result;
+ }
 
-function abs(number){
-    result=0;
-      if( number < 0){
-          result= number*-1;
-      }
-      else{
-          result= number;
-      }
-      return result;
-}
-
-module.exports={
-   sumar, restar, multiplicar, dividir, abs
-};
+ module.exports={
+     sumar, restar, multiplicar, dividir, abs
+ };
