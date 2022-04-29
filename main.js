@@ -1,56 +1,46 @@
-const math = require('./math')
-const nbs = require('./numbers')
-
-
-function arithmethic(){
-    console.log('..........')
-    console.log('aritmetica')
-    console.log(math.sumar(23, 24))
-    console.log(math.restar(46, 44))
-    console.log(math.multiplicar(3, 35))
-    console.log(math.dividir(44, 2))
-}
-
-function absValue() {
-    console.log('......')
-    console.log('absoluto')
-    console.log(math.abs(400))//debe devolver 100
-    console.log(math.abs(-60))//debe devolver 60
-    console.log(math.abs(440))//debe devolver 44
-    console.log(math.abs(-490))//debe devolver 490
-
-}
+const math= require('./math')
+const nb= require('./number')
+ 
+function arithmetic(){
+     console.log('aritmetica')
+     console.log(math.sumar(25 , 43))
+     console.log(math.restar(50 , 30))
+     console.log(math.multiplicar( 100 , 4))
+     console.log(math.dividir(500 , 2))
     
-    function countNumbers() {
-        console.log('......')
-        console.log('contando los valores')
-        console.log('......')
-        nbs.contar(40)
-        console.log('......')
-        nbs.contar(55)
-        console.log('......')
-        nbs.contar(60)
-        console.log('......')
-        nbs.contar(35)
-        
-    }
-
-    function sumarHasta(){
- console.log('sumando hasta N')
- console.log(nbs.sumarHastaN(40))
- console.log(nbs.sumarHastaN(200))
- console.log(nbs.sumarHastaN(30))
- console.log(nbs.sumarHastaN(6))
 }
 
-function calcularMayor(){
-console.log('calculando el mayor')
-console.log(nbs.calcMax([5,10,4,8,20,6]));
+function absValue(){
+     console.log('absoluto')
+     console.log(math.abs (25))
+     console.log(math.abs(-500))
+     console.log(math.abs( 100 ))
+     console.log(math.abs( -2))
 }
-
-
-arithmethic()
-absValue()
-countNumbers()
-sumarHasta()
-calcularMayor()
+ 
+function counter(){
+    console.log('...........')
+    console.log('contando los valores')
+    nb.contar(50)
+    console.log('...........')
+    nb.contar(100)
+    console.log('...........')
+    nb.contar(80)
+}
+ 
+function sumarHastaN(){
+    console.log('...........')
+    console.log('sumando valores')
+    console.log(nb.sumarHastaN(45))
+    console.log(nb.sumarHastaN(60))
+    console.log(nb.sumarHastaN(100))
+    console.log(nb.sumarHastaN(30))
+    
+}
+ 
+function calcMax(){
+    console.log(nb.calcMax([5,10,4,6,20,8]))
+    console.log(nb.calcMax([20, 500, 30, 50, 3, 7]))
+    console.log(nb.calcMax([15, 8, 6, 55, 43]))
+    console.log(nb.calcMax([33, 60, 78, 90]))
+}
